@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimeSlotCollectionViewCell" id="gTV-IL-0wX" customClass="TimeSlotCollectionViewCell" customModule="Vidhik" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVo-1m-Xok" customClass="CustomView" customModule="Vidhik" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5PM - 6PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-2L-tWS">
+                                <rect key="frame" x="31.666666666666671" y="8" width="53" height="14"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.50196078431372548" blue="0.090196078431372548" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a0u-2L-tWS" firstAttribute="centerY" secondItem="LVo-1m-Xok" secondAttribute="centerY" id="3GK-EU-vyv"/>
+                            <constraint firstItem="a0u-2L-tWS" firstAttribute="centerX" secondItem="LVo-1m-Xok" secondAttribute="centerX" id="AZu-WJ-8WH"/>
+                            <constraint firstItem="a0u-2L-tWS" firstAttribute="top" secondItem="LVo-1m-Xok" secondAttribute="top" constant="8" id="C2x-Q6-mTe"/>
+                            <constraint firstAttribute="bottom" secondItem="a0u-2L-tWS" secondAttribute="bottom" constant="8" id="cq7-jQ-9tq"/>
+                            <constraint firstAttribute="height" constant="30" id="ixL-MD-qtq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LVo-1m-Xok" secondAttribute="bottom" constant="10" id="Fko-S0-xQS"/>
+                <constraint firstItem="LVo-1m-Xok" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RaM-g8-PGV"/>
+                <constraint firstItem="LVo-1m-Xok" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xol-Go-FQl"/>
+                <constraint firstAttribute="trailing" secondItem="LVo-1m-Xok" secondAttribute="trailing" id="alM-sB-cgl"/>
+            </constraints>
+            <size key="customSize" width="116" height="40"/>
+            <connections>
+                <outlet property="lblTimeSlot" destination="a0u-2L-tWS" id="JKy-me-Q3J"/>
+                <outlet property="slotView" destination="LVo-1m-Xok" id="MF7-Ow-K81"/>
+            </connections>
+            <point key="canvasLocation" x="9.1603053435114496" y="-4.9295774647887329"/>
+        </collectionViewCell>
+    </objects>
+</document>
